@@ -9,8 +9,7 @@ const PORT = process.env.PORT || 8000;
 
 // MongoDB connect
 const MONGO_URL =
-  "mongodb+srv://nasa-api:KwYGOUdaXMpQiPkV@cluster0.pn5ksx7.mongodb.net/?retryWrites=true&w=majority";
-
+  "mongodb+srv://nasa-api:wtN01vsXpz12ICwy@nasa-cluster.ju6oegn.mongodb.net/?retryWrites=true&w=majority";
 mongoose.connection.once("open", () => {
   console.log("MongoDB connection ready!");
 });
