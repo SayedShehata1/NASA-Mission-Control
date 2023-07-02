@@ -5,8 +5,7 @@ const cors = require("cors");
 const express = require("express");
 const app = express();
 
-const planetsRouter = require("./routes/palnets/planets.router");
-const launchesRouter = require("./routes/launches/launches.router");
+const api = require("./routes/api");
 
 // use middleware to parse any incoming JSON from Requests
 app.use(
@@ -21,8 +20,7 @@ app.use(express.json());
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
-app.use("/planets", planetsRouter);
-app.use("/launches", launchesRouter);
+app.use("/v1", api);
 
 app.use("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "..", "public", "index.html"));
