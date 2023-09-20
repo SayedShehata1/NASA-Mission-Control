@@ -63,7 +63,7 @@ NASA dashboard app for managing and monitoring spaceflights to habitable planets
 
 ## Architecture Diagram
 
-![ArchitectureDiagram](./client/public/Architecture -Diagram.png)
+![ArchitectureDiagram](./client/public/Architecture%20-Diagram.png)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
